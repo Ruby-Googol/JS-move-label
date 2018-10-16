@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>jQuery.kinetic demos</title>
+
+    <script src="vanilla.kinetic.js" type="text/javascript" charset="utf-8"></script>
+
+    <style type="text/css">
+
+        #wrapper {
+            height: 400px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <img src="../img/2.jpg" alt="wembley stadium"/>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+    new VanillaKinetic(document.getElementById("wrapper"));
+
+    document.ondragstart = function () {
+        return false;
+    }
+</script>
+</body>
+</html>

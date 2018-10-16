@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>jQuery.kinetic demos</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="jquery.kinetic.js" type="text/javascript" charset="utf-8"></script>
+
+    <style type="text/css">
+        .wrapper {
+            height: 400px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <img src="../img/4.jpg" />
+</div>
+
+<script type="text/javascript" charset="utf-8">
+    $('.wrapper').kinetic();
+    document.ondragstart = function () {
+        return false
+    }
+</script>
+
+</body>
+</html>
